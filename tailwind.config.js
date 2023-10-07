@@ -20,7 +20,7 @@ export default {
       },
       fontSize: {
         sm: "clamp(0.75rem, 4.2vw, 1rem)",
-        md: "clamp(1rem, 6vw, 1.3rem)",
+        md: "clamp(1rem, 5vw, 1.3rem)",
         lg: "clamp(1.2rem, 7.5vw, 1.6rem)",
         xl: "clamp(1.6rem, 9vw, 2.2rem)",
       },

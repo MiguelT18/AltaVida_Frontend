@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="text-white w-full py-5 fixed flex items-center justify-around backdrop-blur-sm border-b-2 border-white">
+    <nav className="text-white w-full py-5 fixed flex items-center justify-around backdrop-blur-md border-b-2 border-white">
       <img
         onClick={() => (window.location.href = "/")}
         className="w-[123px] h-full cursor-pointer"
@@ -21,7 +21,7 @@ const Navbar = () => {
         {navItems.map((item, index) => (
           <li key={index}>
             <Link
-              className="hover:bg-orange px-4 py-2 rounded-md transition-all cursor-pointer"
+              className="hover:bg-orange text-sm px-4 py-2 rounded-md transition-all cursor-pointer"
               to={item.path}
             >
               {item.text}
