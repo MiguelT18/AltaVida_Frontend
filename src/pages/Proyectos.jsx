@@ -1,4 +1,4 @@
-import Navbar from "src/components/Navbar";
+import Navbar from "@src/components/Navbar";
 
 const Proyectos = () => {
   return (
