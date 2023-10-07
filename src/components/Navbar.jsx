@@ -11,12 +11,14 @@ const Navbar = () => {
 
   return (
     <nav className="text-white w-full py-5 fixed flex items-center justify-around backdrop-blur-md border-b-2 border-white">
-      <img
-        onClick={() => (window.location.href = "/")}
-        className="w-[123px] h-full cursor-pointer"
-        src={BrandLogo}
-        alt="Brand Logo"
-      />
+      <Link to={"/"}>
+        <img
+          className="w-[123px] h-full cursor-pointer"
+          src={BrandLogo}
+          alt="Brand Logo"
+        />
+      </Link>
+
       <ul className="flex gap-8">
         {navItems.map((item, index) => (
           <li key={index}>
