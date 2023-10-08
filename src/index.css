@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #222;
+}
+
 body * {
   font-family: "Montserrat", sans-serif;
+}
+
+.animate__animated.animate__slideInRight {
+  --animate-duration: .3s;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+
+.swiper-image-container.horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }

@@ -6,7 +6,7 @@ const Proyectos = () => {
     <div>
       <Navbar />
       <Header
-        title="Proyectos"
+        title="Desarrolos"
         description="Explora a fondo nuestros proyectos"
       />
     </div>

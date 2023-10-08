@@ -6,8 +6,8 @@ export const routes = [
     element: lazy(async () => await import("../pages/Home/Home")),
   },
   {
-    path: "/proyectos",
-    element: lazy(async () => await import("../pages/Proyectos")),
+    path: "/desarrollos",
+    element: lazy(async () => await import("../pages/Desarrollos")),
   },
   {
     path: "/financiamiento",
