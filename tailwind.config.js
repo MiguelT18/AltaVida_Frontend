@@ -29,6 +29,8 @@ export default {
           'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./src/assets/images/home/01_HeroHome.webp")',
         "hero-home-phone":
           'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./src/assets/images/home/02_HeroHome.webp")',
+        "contact-layout":
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./src/assets/images/contact_layout/contact_background.webp")',
       }),
     },
   },

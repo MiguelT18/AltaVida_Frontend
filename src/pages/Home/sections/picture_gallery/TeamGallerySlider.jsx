@@ -37,7 +37,7 @@ const TeamGallerySlider = () => {
       {TeamPictures.src.map((image, index) => (
         <SwiperSlide key={index}>
           <img
-            className="w-full max-w-[420px] mx-auto my-10 px-5"
+            className="w-full max-w-[420px] mx-auto mb-10 px-5"
             src={image}
             alt={`Team picture ${index}`}
           />
