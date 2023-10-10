@@ -7,18 +7,22 @@ export const routes = [
   },
   {
     path: "/desarrollos",
-    element: lazy(async () => await import("../pages/Desarrollos")),
+    element: lazy(async () => await import("../pages/Desarrollos/Desarrollos")),
   },
   {
     path: "/financiamiento",
-    element: lazy(async () => await import("../pages/Financiamiento")),
+    element: lazy(
+      async () => await import("../pages/Financiamiento/Financiamiento")
+    ),
   },
   {
     path: "/testimoniales",
-    element: lazy(async () => await import("../pages/Testimoniales")),
+    element: lazy(
+      async () => await import("../pages/Testimoniales/Testimoniales")
+    ),
   },
   {
     path: "/blog",
-    element: lazy(async () => await import("../pages/Blog")),
+    element: lazy(async () => await import("../pages/Blog/Blog")),
   },
 ];

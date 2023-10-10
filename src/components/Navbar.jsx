@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="text-white w-full py-5 2xl:px-24 fixed flex items-center justify-around backdrop-blur-md border-b-2 border-white z-50">
+      <nav className="text-white w-full py-5 2xl:px-24 fixed flex items-center justify-around backdrop-blur-md border-b-2 border-white shadow-2xl z-50">
         <Link to={"/"}>
           <img
             className="w-[123px] h-full cursor-pointer"

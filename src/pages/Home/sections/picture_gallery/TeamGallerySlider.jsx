@@ -7,7 +7,7 @@ import TeamPicture5 from "@assets/images/home/team/05_team_picture.webp";
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
-import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const TeamGallerySlider = () => {
@@ -25,14 +25,10 @@ const TeamGallerySlider = () => {
         modifier: 2,
         slideShadows: false,
       }}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
       centeredSlides={true}
       pagination={true}
       grabCursor={true}
-      modules={[Autoplay, Pagination, EffectCoverflow]}
+      modules={[Pagination, EffectCoverflow]}
     >
       {TeamPictures.src.map((image, index) => (
         <SwiperSlide key={index}>

@@ -13,7 +13,7 @@ const InfoCard = ({ title, text, image }) => {
 InfoCard.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
-  image: PropTypes.element,
+  image: PropTypes.any,
 };
 
 export default InfoCard;
