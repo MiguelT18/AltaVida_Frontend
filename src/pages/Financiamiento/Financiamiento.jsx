@@ -3,6 +3,7 @@ import Footer from "@src/components/Footer";
 import Header from "@src/components/Header";
 import Navbar from "@src/components/Navbar";
 import Contact from "@src/layouts/Contact";
+import Creditos from "./Creditos/Creditos";
 
 const Financiamiento = () => {
   return (
@@ -14,6 +15,7 @@ const Financiamiento = () => {
         description="Asesoría personalizada y gratuita"
       />
       <main>
+        <Creditos />
         <Contact />
       </main>
       <Footer />

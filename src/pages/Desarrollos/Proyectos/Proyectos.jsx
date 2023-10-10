@@ -4,7 +4,7 @@ import RioVida from "./RioVida";
 
 const Proyectos = () => {
   return (
-    <section className="bg-white w-[80%] mx-auto -mt-14 mb-16 py-10 px-6">
+    <section className="bg-white w-[70%] mx-auto -mt-14 mb-16 py-10 px-6 shadow-lg shadow-gray-500">
       <h1 className="text-navy-blue text-lg text-center font-my-raleway font-bold uppercase pb-6">
         Proyectos
       </h1>
