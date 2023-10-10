@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const ProyectoCard = ({ project, title, description }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,20 +14,22 @@ const ProyectoCard = ({ project, title, description }) => {
   };
 
   useEffect(() => {
+    const body = document.body;
+
     if (modalOpen) {
-      document.body.style.overflow = "hidden";
+      body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto";
+      body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = "auto";
+      body.style.overflow = "auto";
     };
   }, [modalOpen]);
 
   return (
     <article className="max-w-[300px]">
-      <div className="flex flex-col justify-center text-white bg-navy-blue border-orange border-2 px-4 py-6 rounded-xl">
+      <div className="h-full flex flex-col justify-between text-white bg-navy-blue border-orange border-2 px-4 py-6 rounded-xl">
         <h1 className="text-lg font-bold font-my-raleway pb-2">{title}</h1>
         <p className="text-sm pb-5">{description}</p>
         <button
@@ -38,15 +41,20 @@ const ProyectoCard = ({ project, title, description }) => {
       </div>
 
       {modalOpen && (
-        <div className="w-full h-screen backdrop-blur-md bg-opacity-50 bg-black fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-white w-[80%] p-4 rounded-md shadow-md">
+        <div className="w-full h-full backdrop-blur-md bg-opacity-50 bg-black fixed inset-0 flex items-center justify-center z-50">
+          <div className="bg-white w-[80%] max-h-[80%] overflow-y-auto p-5 rounded-2xl shadow-md">
             {project}
-            <button
-              className="bg-orange hover:bg-[#De7700] transition-all text-white font-my-raleway font-bold px-4 py-1 rounded-md mt-4"
-              onClick={closeModal}
-            >
-              Close Modal
-            </button>
+            <div className="fixed top-2 right-10">
+              <button
+                className=" text-white font-my-raleway font-bold py-1 rounded-full mt-4"
+                onClick={closeModal}
+              >
+                <AiFillCloseCircle
+                  className="text-orange transition-all"
+                  size={"3em"}
+                />
+              </button>
+            </div>
           </div>
         </div>
       )}

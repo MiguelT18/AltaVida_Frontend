@@ -14,10 +14,6 @@ body * {
   --animate-duration: .3s;
 }
 
-.swiper-pagination-bullet {
-  background-color: #fff !important;
-}
-
 .swiper-image-container.horizontal {
   display: flex;
   align-items: center;
