@@ -24,12 +24,6 @@ export default {
         lg: "clamp(1.2rem, 7.5vw, 1.6rem)",
         xl: "clamp(1.6rem, 9vw, 2.2rem)",
       },
-      backgroundImage: () => ({
-        "hero-home-phone":
-          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./src/assets/images/home/02_HeroHome.webp")',
-        "contact-layout":
-          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./src/assets/images/contact_layout/contact_background.webp")',
-      }),
     },
   },
   plugins: [],

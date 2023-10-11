@@ -5,10 +5,7 @@ const ContactButtons = () => {
   return (
     <>
       <a href="https://wa.link/ovut67">
-        <AiOutlineWhatsApp
-          className="w-fit h-fit fixed text-white bg-orange z-50 bottom-0 right-0 m-5 p-2 rounded-full cursor-pointer"
-          size={"40px"}
-        />
+        <AiOutlineWhatsApp className="w-fit h-fit fixed text-white bg-orange z-20 top-24 right-0 m-5 p-2 rounded-full cursor-pointer text-xl" />
       </a>
     </>
   );

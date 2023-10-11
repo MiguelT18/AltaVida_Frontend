@@ -1,8 +1,8 @@
-import RioVida1 from "@assets/images/desarrollos/RIOVIDA/RioVida1.webp";
-import RioVida2 from "@assets/images/desarrollos/RIOVIDA/RioVida2.webp";
-import RioVida3 from "@assets/images/desarrollos/RIOVIDA/RioVida3.webp";
-import RioVida4 from "@assets/images/desarrollos/RIOVIDA/RioVida4.webp";
-import RioVida5 from "@assets/images/desarrollos/RIOVIDA/RioVida5.webp";
+import RioVida1 from "@assets/images/desarrollos/rio_vida/1.webp";
+import RioVida2 from "@assets/images/desarrollos/rio_vida/2.webp";
+import RioVida3 from "@assets/images/desarrollos/rio_vida/3.webp";
+import RioVida4 from "@assets/images/desarrollos/rio_vida/4.webp";
+import RioVida5 from "@assets/images/desarrollos/rio_vida/5.webp";
 // SWIPER
 import "swiper/css";
 import "swiper/css/effect-flip";
@@ -19,8 +19,10 @@ const RioVida = () => {
     <div className="text-center">
       <h1 className="text-xl font-my-raleway font-bold uppercase">Río Vida</h1>
       <p className="text-sm text-dark-gray pb-8">
-        Naturaleza y comodidad en un hogar perfecto respaldado por años de
-        experiencia en alta calidad. Tu refugio, un nuevo comienzo.
+        Sumérgete en Río Vida, donde la naturaleza se funde con la comodidad
+        para ofrecerte un hogar único. Descubre el encanto de vivir en armonía
+        con un entorno natural de ensueño. Bienvenido a tu refugio en la belleza
+        de la vida.
       </p>
       <Swiper
         effect={"coverflow"}
