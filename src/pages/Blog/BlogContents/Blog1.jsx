@@ -7,7 +7,8 @@ const Blog1 = () => {
         ¿Llegó la hora de hacer todas esas compras navideñas y no sabes ni por
         dónde empezar? Te ayudamos a distinguir entre Utilidad y Novedad.
       </h1>
-      <p className="text-sm py-5">
+      <span className="block w-full h-[2px] bg-navy-blue mt-5"></span>
+      <p className="text-sm py-5 text-dark-gray">
         Llegan las fiestas navideñas y en lo único que podemos pensar es
         regalos, regalos y más regalos. Las compras navideñas son una de las
         partes mas emocionantes de esta temporada. Pero; te has puesto a pensar
@@ -15,11 +16,11 @@ const Blog1 = () => {
         simple novedad.
       </p>
       <img
-        className="w-full max-w-[640px] mx-auto"
+        className="w-full max-w-[640px] mx-auto pb-4"
         src={HomeBlog}
         alt="Home Blog"
       />
-      <p className="text-sm py-5">
+      <p className="text-sm py-5 text-dark-gray">
         Muchas veces compramos cosas pensando que las utilizaremos muchísimo y
         terminan arrumbadas en el fondo de nuestro armario, o en algunos casos,
         hasta nos olvidamos que las tenemos.
@@ -32,7 +33,7 @@ const Blog1 = () => {
         <br />
         de comprar un producto considera los siguientes aspectos:
       </p>
-      <ul className="list-disc text-sm">
+      <ul className="list-disc text-sm text-dark-gray">
         <li>
           <strong>Analiza si el producto cubrirá una necesidad real. </strong>
           Todas las compras traen con ellas un sentimiento de satisfacción, por
@@ -52,7 +53,7 @@ const Blog1 = () => {
         </li>
       </ul>
 
-      <p className="text-sm">
+      <p className="text-sm text-dark-gray">
         Y ahora sí, ¡Estás listo para optimizar tus compras navideñas! te
         aseguramos que a partir de ahora pensarás dos veces antes de comprar
         cualquier cosa.

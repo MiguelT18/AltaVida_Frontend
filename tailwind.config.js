@@ -25,8 +25,6 @@ export default {
         xl: "clamp(1.6rem, 9vw, 2.2rem)",
       },
       backgroundImage: () => ({
-        "hero-home-desktop":
-          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./src/assets/images/home/01_HeroHome.webp")',
         "hero-home-phone":
           'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./src/assets/images/home/02_HeroHome.webp")',
         "contact-layout":

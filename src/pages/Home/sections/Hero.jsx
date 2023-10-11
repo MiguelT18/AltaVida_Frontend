@@ -5,7 +5,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen grid place-content-center bg-hero-home-desktop max-sm:bg-hero-home-phone bg-center bg-no-repeat bg-cover bg-fixed px-6">
+    <section className="w-full h-screen grid place-content-center hero-home-desktop max-sm:bg-hero-home-phone bg-fixed px-6">
       <BlurModule>
         <div className="max-w-[900px] flex flex-col">
           <h2 className="text-md font-bold">

@@ -51,8 +51,10 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
 
       {modalOpen && (
         <div className="w-full h-full backdrop-blur-md bg-opacity-50 bg-black fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-white w-[80%] max-h-[80%] overflow-y-auto p-5 rounded-2xl shadow-md">
-            {blogContent}
+          <div className="bg-white w-[80%] max-h-[80%] overflow-y-auto py-10 rounded-2xl shadow-md">
+            <div className="max-md:max-w-[90%] max-w-[60%] mx-auto">
+              {blogContent}
+            </div>
             <div className="fixed top-2 right-10">
               <button
                 className=" text-white font-my-raleway font-bold py-1 rounded-full mt-4"

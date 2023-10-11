@@ -3,7 +3,7 @@ import Financiamiento from "@assets/images/blog/financiamiento.webp";
 import Hexabot from "@assets/images/blog/hexa.webp";
 import HomeBlog from "@assets/images/blog/homeBlog.webp";
 import ComprasNavidad from "@assets/images/blog/navidad/compras_navidad.webp";
-import SanMiguel from "@assets/images/blog/san_miguel.webp";
+import SanMiguel from "@assets/images/blog/san_miguel/san_miguel.webp";
 // Components
 import ContactButtons from "@src/components/ContactButtons";
 import Footer from "@src/components/Footer";
@@ -28,7 +28,7 @@ const Blog = () => {
         description="Ponte al día con las últimas noticias"
       />
       <main>
-        <div className="max-w-[70%] px-5 bg-white shadow-xl shadow-gray-500 mx-auto -mt-14 mb-14 py-14 grid grid-cols-2 max-lg:grid-cols-1 justify-items-center items-stretch gap-12">
+        <div className="w-[90%] md:w-[70%] px-5 bg-white shadow-xl shadow-gray-500 mx-auto -mt-14 mb-14 py-14 grid grid-cols-2 max-lg:grid-cols-1 justify-items-center items-stretch gap-12">
           <CardBlog
             title="Compras navideñas: Utilidad VS. Novedad"
             description="¿Llegó la hora de hacer todas esas compras navideñas y no sabes ni por dónde empezar? Te ayudamos a distinguir entre Utilidad y Novedad."
