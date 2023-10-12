@@ -54,18 +54,18 @@ const ProyectoCard = ({ project, title, description }) => {
             {project}
 
             <div className="w-full h-full flex items-center justify-between">
+              <a
+                href="https://wa.link/ovut67"
+                className="bg-orange text-white font-my-raleway font-bold py-2 px-4 rounded-md mt-4"
+              >
+                Contactar
+              </a>
               <button
-                className="border-2 border-orange font-my-raleway font-bold py-1 px-3 rounded-md mt-4"
+                className="border-2 border-orange font-my-raleway font-bold py-2 px-4 rounded-md mt-4"
                 onClick={closeModal}
               >
                 Cerrar
               </button>
-              <a
-                href="https://wa.link/ovut67"
-                className="bg-orange text-white font-my-raleway font-bold py-1 px-3 rounded-md mt-4"
-              >
-                Contactar
-              </a>
             </div>
           </div>
         </div>
