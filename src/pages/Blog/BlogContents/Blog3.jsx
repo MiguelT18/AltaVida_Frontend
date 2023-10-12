@@ -2,7 +2,7 @@ import SanMiguel01 from "@assets/images/blog/san_miguel/01_san_miguel.webp";
 
 const Blog3 = () => {
   return (
-    <div className="text-black max-w-[90%] mx-auto py-6">
+    <div className="text-black max-w-[90%] mx-auto">
       <img className="mx-auto mb-8" src={SanMiguel01} alt="" />
       <h1 className="text-lg font-my-raleway font-bold">
         San Miguel de Allende es una de las ciudades con mayor prestigio en

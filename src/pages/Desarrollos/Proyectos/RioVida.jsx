@@ -17,7 +17,9 @@ const RioVida = () => {
 
   return (
     <div className="text-center">
-      <h1 className="text-xl font-my-raleway font-bold uppercase">Río Vida</h1>
+      <h1 className="text-xl font-my-raleway font-bold uppercase pb-1">
+        Río Vida
+      </h1>
       <p className="text-sm text-dark-gray pb-8">
         Sumérgete en Río Vida, donde la naturaleza se funde con la comodidad
         para ofrecerte un hogar único. Descubre el encanto de vivir en armonía

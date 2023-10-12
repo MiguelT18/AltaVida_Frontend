@@ -4,6 +4,9 @@ import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { MdWhatsapp } from "react-icons/md";
 
 const Contact = () => {
+  const phoneNumber = "+59162851111";
+  const email = "contacto@altavidasrl.com";
+
   return (
     <section className="w-full grid place-content-center bg-[url('@assets/images/contact_layout/contact_background.webp')] bg-center bg-no-repeat bg-cover bg-fixed py-32 px-6 text-white">
       <HeaderTitle
@@ -18,7 +21,7 @@ const Contact = () => {
           <span>¿Tienes dudas? Llámanos</span>
           <a
             className="bg-orange hover:bg-[#De7700] flex items-center justify-center gap-4 w-[280px] px-6 py-2 rounded-full font-bold font-my-raleway"
-            href="#"
+            href={`tel:${phoneNumber}`}
           >
             <FaPhoneAlt />
             +591 62851111
@@ -28,7 +31,7 @@ const Contact = () => {
           <span>Excríbenos</span>
           <a
             className="bg-orange hover:bg-[#De7700] flex items-center justify-center gap-4 w-[280px] px-6 py-2 rounded-full font-bold font-my-raleway"
-            href="#"
+            href="https://wa.link/ovut67"
           >
             <MdWhatsapp size={"1.5em"} />
             Contacto de soporte
@@ -38,7 +41,7 @@ const Contact = () => {
           <span>¿Deseas información general?</span>
           <a
             className="bg-orange hover:bg-[#De7700] flex items-center justify-center gap-4 w-[280px] px-6 py-2 rounded-full font-bold font-my-raleway"
-            href="#"
+            href={`mailto:${email}`}
           >
             <FaEnvelope />
             contacto@altavidasrl.com

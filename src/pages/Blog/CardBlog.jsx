@@ -13,6 +13,12 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
     setModalOpen(false);
   };
 
+  const handleOuterClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setModalOpen(false);
+    }
+  };
+
   useEffect(() => {
     const body = document.body;
 
@@ -50,12 +56,15 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
       </div>
 
       {modalOpen && (
-        <div className="w-full h-full backdrop-blur-md bg-opacity-50 bg-black fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-white w-[80%] max-h-[80%] overflow-y-auto py-10 rounded-2xl shadow-md">
+        <div
+          onClick={handleOuterClick}
+          className="w-full h-full backdrop-blur-md bg-opacity-50 bg-black fixed inset-0 flex items-center justify-center z-50"
+        >
+          <div className="bg-white w-[90%] max-w-[1080px] max-h-[80%] overflow-y-auto py-6 px-1  rounded-2xl shadow-md">
             <div className="max-md:max-w-[90%] max-w-[60%] mx-auto">
               {blogContent}
             </div>
-            <div className="fixed top-2 right-10">
+            <div className="fixed top-0 right-3 lg:right-12 lg:top-2">
               <button
                 className=" text-white font-my-raleway font-bold py-1 rounded-full mt-4"
                 onClick={closeModal}

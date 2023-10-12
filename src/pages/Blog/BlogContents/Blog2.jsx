@@ -2,7 +2,7 @@ import Hexa from "@assets/images/blog/hexa.webp";
 
 const Blog2 = () => {
   return (
-    <div className="text-black max-w-[90%] mx-auto py-6">
+    <div className="text-black max-w-[90%] mx-auto">
       <h1 className="text-lg font-my-raleway font-bold">
         Aunque creas que todo estaba inventado en la robótica, no es así. HEXA
         el robot que cuida tus plantas.

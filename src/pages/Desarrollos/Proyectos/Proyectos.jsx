@@ -1,3 +1,4 @@
+import AltaMira from "./AltaMira";
 import Bless from "./Bless";
 import ProyectoCard from "./ProyectoCard";
 import RioVida from "./RioVida";
@@ -18,6 +19,11 @@ const Proyectos = () => {
           project={<RioVida />}
           title="Río Vida"
           description="Naturaleza y comodidad en un hogar perfecto respaldado por años de experiencia en alta calidad. Tu refugio, un nuevo comienzo."
+        />
+        <ProyectoCard
+          project={<AltaMira />}
+          title="Alta Mira"
+          description="Tu hogar en el cielo. Lujo, comodidad y vistas inspiradoras se fusionan en tu nuevo refugio en las alturas."
         />
       </div>
     </section>

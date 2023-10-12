@@ -12,7 +12,7 @@ const Bless = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold uppercase text-center">Bless</h2>
+      <h2 className="text-xl font-bold uppercase text-center pb-1">Bless</h2>
       <p className="text-sm text-dark-gray pb-8">
         Adéntrate en Bless, donde la elegancia y el confort se entrelazan para
         darte la bienvenida a tu nuevo hogar. Descubre la sofisticación de vivir

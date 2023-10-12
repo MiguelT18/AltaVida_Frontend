@@ -10,8 +10,8 @@ body * {
   font-family: "Montserrat", sans-serif;
 }
 
-.animate__animated.animate__slideInRight {
-  --animate-duration: .3s;
+.animate__animated.animate__zoomIn {
+  --animate-duration: .5s;
 }
 
 .swiper-image-container.horizontal {

@@ -22,6 +22,16 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  const handleOuterClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeMenu();
+    }
+  };
+
   return (
     <header>
       <nav className="text-white w-full py-5 2xl:px-24 fixed flex items-center justify-around backdrop-blur-md bg-black bg-opacity-50 border-b-2 border-white shadow-2xl z-50">
@@ -41,10 +51,18 @@ const Navbar = () => {
               size={"40px"}
             />
             {menuOpen && (
-              <ul className="animate__animated animate__slideInRight absolute fond-bold text-md text-center bg-black border-2 border-dark-gray grid gap-4 place-content-center backdrop-blur-sm bg-opacity-90 w-full h-screen right-0 top-0">
+              <ul
+                onClick={handleOuterClick}
+                className="animate__animated animate__zoomIn absolute fond-bold text-md text-center bg-black border-2 border-dark-gray grid gap-6 place-content-center backdrop-blur-sm bg-opacity-90 w-full h-screen right-0 top-0 "
+              >
                 {navItems.map((item, index) => (
                   <li key={index}>
-                    <Link to={item.path}>{item.text}</Link>
+                    <Link
+                      className="w-full h-full font-my-raleway text-lg px-4 border-l-2 border-orange"
+                      to={item.path}
+                    >
+                      {item.text}
+                    </Link>
                   </li>
                 ))}
               </ul>

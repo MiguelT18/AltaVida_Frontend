@@ -2,7 +2,7 @@ import HomeBlog from "@assets/images/blog/navidad/homeBlog.webp";
 
 const Blog1 = () => {
   return (
-    <div className="text-black max-w-[90%] mx-auto py-6">
+    <div className="text-black max-w-[90%] mx-auto">
       <h1 className="text-lg font-my-raleway font-bold">
         ¿Llegó la hora de hacer todas esas compras navideñas y no sabes ni por
         dónde empezar? Te ayudamos a distinguir entre Utilidad y Novedad.
