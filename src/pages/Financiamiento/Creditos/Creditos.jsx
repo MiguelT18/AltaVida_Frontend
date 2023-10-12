@@ -46,7 +46,7 @@ const Creditos = () => {
       <div className="max-w-[900px] mx-auto flex flex-wrap items-stretch gap-10 justify-center">
         {Creditos.names.map((name, index) => (
           <div
-            className="bg-navy-blue text-white max-w-[200px] min-h-[100px] p-5 rounded-xl shadow-md shadow-gray-200"
+            className="bg-navy-blue border-2 border-orange text-white max-w-[200px] min-h-[100px] p-5 rounded-xl shadow-md shadow-gray-200"
             key={index}
           >
             <h1 className="text-center text-sm font-bold font-my-raleway pb-4">
