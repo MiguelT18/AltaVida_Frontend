@@ -10,7 +10,7 @@ import RioVida from "../Desarrollos/Proyectos/RioVida";
 
 const DesarrollosHome = () => {
   return (
-    <div className="pt-10 pb-24">
+    <div className="pt-10 pb-24 px-5">
       <HeaderTitle
         textClass="text-sm text-dark-dray"
         lineClass="bg-navy-blue"

@@ -21,13 +21,13 @@ const Testimonios = () => {
     ],
   };
 
-  const isMdScreen = window.innerWidth >= 768;
+  const isMdScreen = window.innerWidth >= 900;
 
   const [navigationEnabled, setNavigationEnabled] = useState(isMdScreen);
 
   useEffect(() => {
     const handleResize = () => {
-      setNavigationEnabled(window.innerWidth >= 768);
+      setNavigationEnabled(window.innerWidth >= 900);
     };
 
     window.addEventListener("resize", handleResize);
@@ -42,7 +42,7 @@ const Testimonios = () => {
       <TestimoniosHeader />
 
       <article>
-        <h1 className="text-center text-md font-bold font-my-raleway pt-2 pb-8 uppercase">
+        <h1 className="text-center text-md font-bold font-my-raleway pt-6 pb-8 uppercase">
           Descubre la Alegría de Nuestros Clientes en Alta Vida
         </h1>
         <Swiper
@@ -64,7 +64,7 @@ const Testimonios = () => {
           {VideoSliders.src.map((video, index) => (
             <SwiperSlide key={index}>
               <video
-                className="max-w-[80%] md:max-w-[20%] mx-auto mb-16 cursor-pointer"
+                className="md:max-w-[60%] lg:max-w-[30%] mx-auto mb-16 cursor-pointer"
                 src={video}
                 controls
               ></video>

@@ -14,9 +14,14 @@ const TeamGallery = () => {
   };
 
   return (
-    <div className="min-w-[1028px] max-w-[1260px] mx-auto flex justify-center items-center align-middle gap-1 flex-wrap pt-8">
+    <div className="min-w-[1028px] max-w-[1260px] mx-auto flex justify-center gap-1 flex-wrap pt-8">
       {TeamPictures.src.map((image, index) => (
-        <img key={index} src={image} alt={`Team picture ${index}`} />
+        <img
+          className="max-w-[460px]"
+          key={index}
+          src={image}
+          alt={`Team picture ${index}`}
+        />
       ))}
     </div>
   );

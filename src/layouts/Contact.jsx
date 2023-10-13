@@ -8,7 +8,7 @@ const Contact = () => {
   const email = "contacto@altavidasrl.com";
 
   return (
-    <section className="w-full h-[80vh] grid place-content-center bg-[url('@assets/images/contact_layout/contact_background.webp')] bg-center bg-no-repeat bg-cover bg-fixed py-32 px-6 text-white">
+    <section className="w-full h-full min-h-[80vh] grid place-content-center bg-[url('@assets/images/contact_layout/contact_background.webp')] bg-center bg-no-repeat bg-cover bg-fixed py-32 px-6 text-white">
       <HeaderTitle
         title="Descubre nuestros desarrollos exclusivos"
         description="Contáctanos"

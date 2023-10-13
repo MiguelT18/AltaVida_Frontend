@@ -40,7 +40,7 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
         <div className="p-5 flex flex-col items-end justify-between gap-2">
           <h1 className="text-lg font-my-raleway font-bold">{title}</h1>
           <p className="text-sm">{description}</p>
-          <div className="text-sm flex items-center w-full justify-between gap-2 pt-3">
+          <div className="text-sm flex items-center w-full justify-between gap-2 pt-5">
             <button
               onClick={openModal}
               className="bg-orange hover:bg-[#De7700] py-2 px-4 block w-fit transition-all text-white font-my-raleway font-bold rounded-md"

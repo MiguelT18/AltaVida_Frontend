@@ -1,15 +1,17 @@
 // Images
+import Ahorra from "@assets/images/blog/ahorra/FocoPicture.webp";
 import Financiamiento from "@assets/images/blog/financiamiento.webp";
-import Hexabot from "@assets/images/blog/hexa.webp";
 import HomeBlog from "@assets/images/blog/homeBlog.webp";
 import ComprasNavidad from "@assets/images/blog/navidad/compras_navidad.webp";
-import SanMiguel from "@assets/images/blog/san_miguel/san_miguel.webp";
+import Tarija01 from "@assets/images/blog/tarija/tarija01.webp";
+
 // Components
 import ContactButtons from "@src/components/ContactButtons";
 import Footer from "@src/components/Footer";
 import Navbar from "@src/components/Navbar";
 import Contact from "@src/layouts/Contact";
 import CardBlog from "./CardBlog";
+
 // Blogs
 import Blog1 from "./BlogContents/Blog1";
 import Blog2 from "./BlogContents/Blog2";
@@ -41,17 +43,19 @@ const Blog = () => {
             blogContent={<Blog1 />}
           />
           <CardBlog
-            title="El robot HEXA ahora cuida tus plantas"
-            description="Aunque creas que todo estaba inventado en la robótica, no es así. HEXA el robot que cuida tus plantas."
+            title="Ahorra energía en casa con estos tips y bájale a tu recibo de luz"
+            description="Descubre cómo ahorrar energía en casa y reducir tus gastos mensuales. Con consejos prácticos y efectivos, aprenderás a cuidar el medio ambiente mientras ahorras dinero."
             views="3240"
-            image={Hexabot}
+            image={Ahorra}
             blogContent={<Blog2 />}
           />
           <CardBlog
-            title="5 Razones para vivir en San Miguel de Allende"
-            description="San Miguel de Allende es una de las ciudades con mayor prestigio en México. Aquí te platicamos 5 razones para vivir en San Miguel."
+            title="5 Razones por las que Tarija, Bolivia, es un Lugar Ideal
+        para Vivir"
+            description="Tarija es una ciudad que combina la belleza
+        natural con una rica cultura y un estilo de vida relajado."
             views="6060"
-            image={SanMiguel}
+            image={Tarija01}
             blogContent={<Blog3 />}
           />
           <CardBlog

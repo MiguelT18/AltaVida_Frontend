@@ -4,11 +4,13 @@ import "animate.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { AiOutlineFullscreenExit } from "react-icons/ai";
 import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const navItems = [
     { path: "/desarrollos", text: "Desarrollos" },
+    { path: "/catalogo", text: "Catálogo" },
     { path: "/financiamiento", text: "Financiamiento" },
     { path: "/testimoniales", text: "Testimoniales" },
     { path: "/nosotros", text: "Nosotros" },
@@ -42,18 +44,23 @@ const Navbar = () => {
         />
       </Link>
 
-      {windowWidth <= 900 ? (
+      {windowWidth <= 980 ? (
         <div>
           <IoMenu
             onClick={toggleMenu}
-            className="cursor-pointer relative z-50"
-            size={"40px"}
+            className="cursor-pointer relative z-300"
+            size={"3em"}
           />
           {menuOpen && (
             <ul
               onClick={handleOuterClick}
               className="animate__animated animate__zoomIn absolute fond-bold text-md text-center bg-black border-2 border-dark-gray grid gap-6 place-content-center backdrop-blur-sm bg-opacity-90 w-full h-screen right-0 top-0 "
             >
+              <AiOutlineFullscreenExit
+                onClick={closeMenu}
+                className="absolute right-10 top-10 cursor-pointer"
+                size={"3em"}
+              />
               {navItems.map((item, index) => (
                 <li key={index}>
                   <Link
