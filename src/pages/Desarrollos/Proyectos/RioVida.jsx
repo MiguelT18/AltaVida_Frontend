@@ -17,7 +17,7 @@ const RioVida = () => {
 
   return (
     <div className="text-center">
-      <h1 className="text-xl font-my-raleway font-bold uppercase pb-1">
+      <h1 className="text-xl font-my-raleway font-bold uppercase pb-2">
         Río Vida
       </h1>
       <p className="text-sm text-dark-gray pb-8">

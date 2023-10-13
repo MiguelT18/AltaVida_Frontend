@@ -34,7 +34,7 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
   }, [modalOpen]);
 
   return (
-    <article className="max-w-[380px] bg-navy-blue text-white border-2 border-orange rounded-2xl">
+    <article className="max-w-[380px] bg-gradient-to-t from-slate-900 to-navy-blue text-white border-2 border-orange rounded-2xl">
       <div>
         <img className="w-full rounded-t-2xl" src={image} alt="Blog post" />
         <div className="p-5 flex flex-col items-end justify-between gap-2">
@@ -43,7 +43,7 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
           <div className="text-sm flex items-center w-full justify-between gap-2 pt-3">
             <button
               onClick={openModal}
-              className="bg-orange hover:bg-[#De7700] block w-fit transition-all text-white font-my-raleway font-bold px-4 py-1 rounded-md"
+              className="bg-orange hover:bg-[#De7700] py-2 px-4 block w-fit transition-all text-white font-my-raleway font-bold rounded-md"
             >
               Ver noticia
             </button>
@@ -60,8 +60,8 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
           onClick={handleOuterClick}
           className="w-full h-full backdrop-blur-md bg-opacity-50 bg-black fixed inset-0 flex items-center justify-center z-50"
         >
-          <div className="bg-white w-[90%] max-w-[1080px] max-h-[80%] overflow-y-auto py-6 px-1  rounded-2xl shadow-md">
-            <div className="max-md:max-w-[90%] max-w-[60%] mx-auto">
+          <div className="bg-white max-w-[90%] sm:max-w-[70%] max-h-[80%] overflow-y-auto py-6 px-1  rounded-2xl shadow-md">
+            <div className="max-md:max-w-[90%] max-w-[80%] mx-auto">
               {blogContent}
             </div>
             <div className="fixed top-0 right-3 lg:right-12 lg:top-2">
@@ -70,7 +70,7 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
                 onClick={closeModal}
               >
                 <AiFillCloseCircle
-                  className="text-orange transition-all"
+                  className="animate__animated animate__heartBeat text-orange transition-all bg-dark-gray rounded-full"
                   size={"3em"}
                 />
               </button>

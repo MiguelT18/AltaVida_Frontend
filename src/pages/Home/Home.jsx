@@ -2,9 +2,8 @@ import ContactButtons from "@src/components/ContactButtons";
 import Footer from "@src/components/Footer";
 import Navbar from "@src/components/Navbar";
 import Contact from "../../layouts/Contact";
-import Exito from "./sections/Exito";
-import Hero from "./sections/Hero";
-import Nosotros from "./sections/Nosotros";
+import DesarrollosHome from "./DesarrollosHome";
+import Hero from "./Hero";
 
 const Home = () => {
   return (
@@ -13,8 +12,7 @@ const Home = () => {
       <ContactButtons />
       <main>
         <Hero />
-        <Nosotros />
-        <Exito />
+        <DesarrollosHome />
         <Contact />
       </main>
       <Footer />

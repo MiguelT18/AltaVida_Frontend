@@ -19,7 +19,7 @@ const HeaderTitle = ({
           className={`block mx-auto w-[75%] h-[2px] ${lineClass} relative after:block after:w-[25%] after:h-[5px] after:mx-auto after:bg-orange`}
         ></span>
       </div>
-      <p className={`text-center text-md ${textClass} pt-5`}>{description}</p>
+      <p className={`text-center ${textClass} pt-8`}>{description}</p>
     </header>
   );
 };

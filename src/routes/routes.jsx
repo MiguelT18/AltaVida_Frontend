@@ -6,6 +6,10 @@ export const routes = [
     element: lazy(async () => await import("../pages/Home/Home")),
   },
   {
+    path: "/nosotros",
+    element: lazy(async () => await import("../pages/Nosotros/Nosotros")),
+  },
+  {
     path: "/desarrollos",
     element: lazy(async () => await import("../pages/Desarrollos/Desarrollos")),
   },

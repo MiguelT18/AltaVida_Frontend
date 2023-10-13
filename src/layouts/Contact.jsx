@@ -8,13 +8,13 @@ const Contact = () => {
   const email = "contacto@altavidasrl.com";
 
   return (
-    <section className="w-full grid place-content-center bg-[url('@assets/images/contact_layout/contact_background.webp')] bg-center bg-no-repeat bg-cover bg-fixed py-32 px-6 text-white">
+    <section className="w-full h-[80vh] grid place-content-center bg-[url('@assets/images/contact_layout/contact_background.webp')] bg-center bg-no-repeat bg-cover bg-fixed py-32 px-6 text-white">
       <HeaderTitle
         title="Descubre nuestros desarrollos exclusivos"
         description="Contáctanos"
         titleClass="text-white"
         lineClass="bg-silver"
-        textClass="text-white"
+        textClass="text-white text-md font-bold"
       />
       <div className="flex flex-wrap justify-center items-center gap-8 pt-5 mx-4">
         <div className="flex flex-col gap-3 text-center">

@@ -7,7 +7,6 @@ import SanMiguel from "@assets/images/blog/san_miguel/san_miguel.webp";
 // Components
 import ContactButtons from "@src/components/ContactButtons";
 import Footer from "@src/components/Footer";
-import Header from "@src/components/Header";
 import Navbar from "@src/components/Navbar";
 import Contact from "@src/layouts/Contact";
 import CardBlog from "./CardBlog";
@@ -23,10 +22,15 @@ const Blog = () => {
     <div>
       <Navbar />
       <ContactButtons />
-      <Header
-        title="Blog"
-        description="Ponte al día con las últimas noticias"
-      />
+      <header className="bg-navy-blue bg-cover bg-no-repeat bg-center bg-fixed text-white flex flex-col items-center justify-end w-full h-[45vh] pb-24">
+        <h1 className="text-xl text-center font-my-raleway font-bold uppercase">
+          Blog
+        </h1>
+        <p className="text-sm text-center">
+          Ponte al día con las últimas noticias
+        </p>
+      </header>
+
       <main>
         <div className="w-[90%] md:w-[70%] px-5 bg-white shadow-xl shadow-gray-500 mx-auto -mt-14 mb-14 py-14 grid grid-cols-2 max-lg:grid-cols-1 justify-items-center items-stretch gap-12">
           <CardBlog

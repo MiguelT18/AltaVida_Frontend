@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
-const ProyectoCard = ({ project, title, description }) => {
+const ProyectoCard = ({ project, title, description, image }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -34,12 +34,21 @@ const ProyectoCard = ({ project, title, description }) => {
 
   return (
     <article className="max-w-[300px]">
-      <div className="h-full flex flex-col justify-between text-white bg-navy-blue border-orange border-2 px-4 py-6 rounded-xl">
-        <h1 className="text-lg font-bold font-my-raleway pb-2">{title}</h1>
-        <p className="text-sm pb-5">{description}</p>
+      <div className="h-full text-center flex flex-col items-center justify-between bg-gradient-to-t from-slate-900 to-navy-blue text-white border-orange border-2 px-4 py-6 rounded-xl shadow-lg shadow-gray-500">
+        <img
+          className="max-w-[95%] mx-auto"
+          src={image}
+          alt="Project Description"
+        />
+        <div>
+          <h1 className="text-lg font-bold font-my-raleway pb-2 pt-6">
+            {title}
+          </h1>
+          <p className="text-sm pb-5">{description}</p>
+        </div>
         <button
           onClick={openModal}
-          className="bg-orange hover:bg-[#De7700] w-fit mx-auto transition-all text-white font-my-raleway font-bold px-4 py-1 rounded-md"
+          className="bg-orange hover:bg-[#De7700] w-fit transition-all text-white font-my-raleway font-bold py-2 px-4 rounded-md"
         >
           Ver proyectos
         </button>
@@ -50,10 +59,10 @@ const ProyectoCard = ({ project, title, description }) => {
           onClick={handleOuterClick}
           className="w-full h-full backdrop-blur-md bg-opacity-50 bg-black fixed flex inset-0 items-center justify-center z-50"
         >
-          <div className="bg-white w-[90%] max-h-[80%] overflow-y-auto px-5 py-6 rounded-2xl shadow-md">
+          <div className="bg-white w-[90%] max-h-[90%] lg:max-w-[60%] overflow-y-auto px-5 py-6 rounded-2xl shadow-md">
             {project}
 
-            <div className="w-full h-full flex items-center justify-between">
+            <div className="w-full h-full flex items-center justify-around">
               <a
                 href="https://wa.link/ovut67"
                 className="bg-orange text-white font-my-raleway font-bold py-2 px-4 rounded-md mt-4"
@@ -77,7 +86,8 @@ const ProyectoCard = ({ project, title, description }) => {
 ProyectoCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  project: PropTypes.any,
+  project: PropTypes.node,
+  image: PropTypes.any,
 };
 
 export default ProyectoCard;
