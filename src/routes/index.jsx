@@ -1,6 +1,7 @@
 import UseScrollToTop from "@hooks/UseScrollToTop";
 import { Fragment, Suspense } from "react";
 import { Outlet, Route } from "react-router-dom";
+import Loading from "./Loading/Loading";
 
 export default function RenderRoutes(routes) {
   return routes.map((route) => {
@@ -11,7 +12,7 @@ export default function RenderRoutes(routes) {
         key={route.path}
         path={route.path}
         element={
-          <Suspense fallback={<h1>Loading...</h1>}>
+          <Suspense fallback={<Loading />}>
             <UseScrollToTop>
               <Layout>{route.children ? <Outlet /> : <Component />}</Layout>
             </UseScrollToTop>

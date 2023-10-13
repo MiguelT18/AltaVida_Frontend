@@ -1,25 +1,35 @@
+// Images
+import Render1 from "../../../assets/images/desarrollos/alta_mira/render1.webp";
+import Render2 from "../../../assets/images/desarrollos/alta_mira/render2.webp";
+import Render3 from "../../../assets/images/desarrollos/alta_mira/render3.webp";
+import Render4 from "../../../assets/images/desarrollos/alta_mira/render4.webp";
+import Render5 from "../../../assets/images/desarrollos/alta_mira/render5.webp";
+import Render6 from "../../../assets/images/desarrollos/alta_mira/render6.webp";
+import Render7 from "../../../assets/images/desarrollos/alta_mira/render7.webp";
+import Render8 from "../../../assets/images/desarrollos/alta_mira/render8.webp";
+import Render9 from "../../../assets/images/desarrollos/alta_mira/render9.webp";
+
 // SWIPER
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
-// import { EffectCoverflow, Pagination } from "swiper/modules";
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const AltaMira = () => {
-  // const ProjectPictures = {
-  //   src: [
-  //     ImageSlide1,
-  //     ImageSlide2,
-  //     ImageSlide3,
-  //     ImageSlide4,
-  //     ImageSlide5,
-  //     ImageSlide6,
-  //     ImageSlide7,
-  //     ImageSlide8,
-  //     ImageSlide9,
-  //     ImageSlide10,
-  //   ],
-  // };
+  const ProjectPictures = {
+    src: [
+      Render1,
+      Render2,
+      Render3,
+      Render4,
+      Render5,
+      Render6,
+      Render7,
+      Render8,
+      Render9,
+    ],
+  };
 
   return (
     <div>
@@ -32,7 +42,6 @@ const AltaMira = () => {
         alturas. Bienvenido al estilo de vida que siempre soñaste.
       </p>
 
-      {/*
       <Swiper
         effect={"coverflow"}
         coverflowEffect={{
@@ -56,7 +65,7 @@ const AltaMira = () => {
             />
           </SwiperSlide>
         ))}
-      </Swiper> */}
+      </Swiper>
     </div>
   );
 };
