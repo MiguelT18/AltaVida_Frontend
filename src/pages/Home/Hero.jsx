@@ -13,7 +13,7 @@ const Hero = () => {
             para crear experiencias inolvidables.
           </h2>
           <Link
-            className="animate__animated animate__bounce w-fit pt-5 flex items-center justify-end gap-1 hover:underline hover:text-yellow transition-all"
+            className="animate__animated animate__animated animate__bounceIn w-fit pt-5 flex items-center justify-end gap-1 hover:underline hover:text-yellow transition-all"
             to={"/desarrollos"}
           >
             <span className="text-sm text-end max-sm:underline max-sm:italic">

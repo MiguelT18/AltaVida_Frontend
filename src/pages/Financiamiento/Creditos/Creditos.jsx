@@ -46,7 +46,7 @@ const Creditos = () => {
       <div className="max-w-[900px] mx-auto flex flex-wrap items-stretch gap-10 justify-center">
         {Creditos.names.map((name, index) => (
           <div
-            className="border-orange text-dark-gray max-w-[200px] min-h-[100px] p-5 rounded-xl shadow-md shadow-gray-300"
+            className="border-orange text-dark-gray backdrop-blur-3xl bg-slate-100 bg-opacity-60 max-w-[200px] min-h-[100px] p-5 rounded-xl shadow-md shadow-gray-200"
             key={index}
           >
             <img
@@ -56,7 +56,7 @@ const Creditos = () => {
               src={Creditos.src[index]}
               alt="Credit info"
             />
-            <h1 className="text-center text-md font-bold font-my-raleway pt-4">
+            <h1 className="text-center text-sm font-bold font-my-raleway pt-4">
               {name}
             </h1>
           </div>

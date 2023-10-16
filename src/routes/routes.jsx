@@ -15,7 +15,34 @@ export const routes = [
   },
   {
     path: "/desarrollos",
-    element: lazy(async () => await import("../pages/Desarrollos/Desarrollos")),
+    children: [
+      {
+        path: "/desarrollos",
+        element: lazy(
+          async () => await import("../pages/Desarrollos/Desarrollos")
+        ),
+      },
+      {
+        path: "/desarrollos/altamira",
+        element: lazy(
+          async () =>
+            await import("../pages/Desarrollos/Proyectos/AltaMira/AltaMira")
+        ),
+      },
+      {
+        path: "/desarrollos/bless",
+        element: lazy(
+          async () => await import("../pages/Desarrollos/Proyectos/Bless/Bless")
+        ),
+      },
+      {
+        path: "/desarrollos/riovida",
+        element: lazy(
+          async () =>
+            await import("../pages/Desarrollos/Proyectos/RioVida/RioVida")
+        ),
+      },
+    ],
   },
   {
     path: "/financiamiento",

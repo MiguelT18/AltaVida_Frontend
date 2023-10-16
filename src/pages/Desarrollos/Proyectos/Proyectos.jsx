@@ -1,34 +1,78 @@
-import AltaMira from "./AltaMira";
-import Bless from "./Bless";
-import ProyectoCard from "./ProyectoCard";
-import RioVida from "./RioVida";
+import AltaMiraImg from "@assets/images/desarrollos/ALTAMIRA.webp";
+import BlessImg from "@assets/images/desarrollos/BLESS.webp";
+import RioVidaImg from "@assets/images/desarrollos/RIOVIDA.webp";
 
-import AltaMiraLogo from "@assets/images/desarrollos/alta_mira/alta_mira_logo.png";
-import BlessLogo from "@assets/images/desarrollos/bless/Logo_Bless.png";
-import RioVidaLogo from "@assets/images/desarrollos/rio_vida/rio_vida_logo.png";
+// SWIPER
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+// import required modules
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+
+import { Link } from "react-router-dom";
+import "./proyectosSlider.css";
 
 const Proyectos = () => {
+  const Projects = {
+    src: [AltaMiraImg, BlessImg, RioVidaImg],
+    routes: [
+      "/desarrollos/altamira",
+      "/desarrollos/bless",
+      "/desarrollos/riovida",
+    ],
+  };
+
   return (
-    <section className="bg-white w-[90%] md:w-[70%] mx-auto -mt-14 mb-16 pb-10 pt-14 px-6 shadow-lg shadow-gray-500">
-      <div className="flex flex-wrap justify-center gap-12 pb-8">
-        <ProyectoCard
-          image={BlessLogo}
-          project={<Bless />}
-          title="Bless"
-          description="Explora condominios verticales elegantes y cómodos. Más de 9 años de experiencia y 350 casas de alta calidad entregadas. Encuentra tu espacio perfecto en nuestros proyectos."
-        />
-        <ProyectoCard
-          image={RioVidaLogo}
-          project={<RioVida />}
-          title="Río Vida"
-          description="Naturaleza y comodidad en un hogar perfecto respaldado por años de experiencia en alta calidad. Tu refugio, un nuevo comienzo."
-        />
-        <ProyectoCard
-          image={AltaMiraLogo}
-          project={<AltaMira />}
-          title="Alta Mira"
-          description="Tu hogar en el cielo. Lujo, comodidad y vistas inspiradoras se fusionan en tu nuevo refugio en las alturas."
-        />
+    <section className="bg-white w-[90%] md:w-[70%] mx-auto -mt-14 mb-16 pt-5 shadow-lg shadow-gray-500">
+      <div>
+        <p className="text-sm px-5">
+          Descubre la excelencia de AltaVida en proyectos que abarcan desde lujo
+          con <strong>Bless</strong> hasta versatilidad con
+          <strong> Río Vida</strong> y confiabilidad con
+          <strong>Altamira</strong>. Nuestra experiencia de nueve años, más de
+          350 casas construidas y servicios de intermediación financiera nos
+          distinguen. Explora nuestras opciones con un compromiso inquebrantable
+          con la excelencia, versatilidad e integridad.
+        </p>
+
+        <Swiper
+          autoHeight={true}
+          effect={"coverflow"}
+          spaceBetween={50}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 40,
+            stretch: 10,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
+        >
+          {Projects.src.map((project, index) => (
+            <SwiperSlide key={index}>
+              <Link to={Projects.routes[index]}>
+                <img
+                  className="w-[80%] sm:w-full mx-auto shadow-lg shadow-black"
+                  src={project}
+                  alt={`Project ${index}`}
+                />
+                <span className="bg-orange hover:bg-[#De7700] mx-auto mt-6 py-2 px-4 block w-fit transition-all text-white font-my-raleway font-bold rounded-md">
+                  Ver Proyecto
+                </span>
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

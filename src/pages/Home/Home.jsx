@@ -3,8 +3,8 @@ import Footer from "@src/components/Footer";
 import Navbar from "@src/components/Navbar";
 import BlogView from "@src/layouts/BlogView";
 import Contact from "../../layouts/Contact";
-import DesarrollosHome from "./DesarrollosHome";
 import Hero from "./Hero";
+import ProyectosSection from "./ProyectosSection";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <ContactButtons />
       <main>
         <Hero />
-        <DesarrollosHome />
+        <ProyectosSection />
         <BlogView />
         <Contact />
       </main>

@@ -37,7 +37,7 @@ const BlogView = () => {
         </div>
 
         <img
-          className="w-full max-w-[640px] max-md:mx-auto max-md:max-w-[420px] h-full -ml-16 max-md:-mb-10"
+          className="w-[50%] h-full -ml-16 max-md:-mb-10"
           src={FocoPicture}
           alt="Entérate de nuestras últimas noticias en nuestro blog"
         />

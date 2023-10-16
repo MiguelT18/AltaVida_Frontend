@@ -8,7 +8,7 @@ const HeaderTitle = ({
   textClass,
 }) => {
   return (
-    <header className="mx-4">
+    <header>
       <div className="w-full mx-auto flex flex-col gap-4">
         <h1
           className={` text-center text-xl ${titleClass} font-bold font-my-raleway`}
@@ -16,12 +16,10 @@ const HeaderTitle = ({
           {title}
         </h1>
         <span
-          className={`block mx-auto w-[75%] h-[2px] ${lineClass} relative after:block after:w-[25%] after:h-[5px] after:mx-auto after:bg-orange`}
+          className={`block mx-auto w-[60%] h-[2px] ${lineClass} relative after:block after:w-[25%] after:h-[5px] after:mx-auto after:bg-orange mt-1 mb-6`}
         ></span>
       </div>
-      <p className={`w-fit mx-auto text-center ${textClass} pt-8`}>
-        {description}
-      </p>
+      <p className={`w-fit mx-auto text-center ${textClass}`}>{description}</p>
     </header>
   );
 };

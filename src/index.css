@@ -10,8 +10,8 @@ body * {
   font-family: "Montserrat", sans-serif;
 }
 
-.animate__animated.animate__zoomIn {
-  --animate-duration: .5s;
+.animate__animated.animate__bounceIn {
+  --animate-duration: .7s;
 }
 
 .swiper-image-container.horizontal {
@@ -20,3 +20,4 @@ body * {
   justify-content: center;
   height: 100%;
 }
+
