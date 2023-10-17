@@ -18,7 +18,7 @@ import "./homeStyles.css";
 
 const DesarrollosHome = () => {
   return (
-    <div className="mx-auto pt-8">
+    <section className="mx-auto pt-8">
       <div className="w-full max-w-[1500px] mx-auto px-4">
         <HeaderTitle
           textClass="text-sm text-dark-dray"
@@ -72,13 +72,13 @@ const DesarrollosHome = () => {
         </SwiperSlide>
 
         <Link
-          className="bg-orange hover:bg-[#De7700] mx-auto mt-4 py-2 px-4 block w-fit transition-all text-white font-my-raleway font-bold rounded-md"
+          className="bg-orange hover:bg-[#De7700] mx-auto mt-4 py-2 px-4 block w-fit transition-all text-white text-sm font-my-raleway font-bold rounded-md"
           to={"/desarrollos"}
         >
           Ver Proyectos
         </Link>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

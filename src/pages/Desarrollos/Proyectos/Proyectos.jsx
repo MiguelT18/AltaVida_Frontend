@@ -27,11 +27,11 @@ const Proyectos = () => {
   return (
     <section className="bg-white w-[90%] md:w-[70%] mx-auto -mt-14 mb-16 pt-5 shadow-lg shadow-gray-500">
       <div>
-        <p className="text-sm px-5">
+        <p className="text-sm text-center px-5">
           Descubre la excelencia de AltaVida en proyectos que abarcan desde lujo
           con <strong>Bless</strong> hasta versatilidad con
           <strong> Río Vida</strong> y confiabilidad con
-          <strong>Altamira</strong>. Nuestra experiencia de nueve años, más de
+          <strong> Altamira</strong>. Nuestra experiencia de nueve años, más de
           350 casas construidas y servicios de intermediación financiera nos
           distinguen. Explora nuestras opciones con un compromiso inquebrantable
           con la excelencia, versatilidad e integridad.
@@ -66,7 +66,7 @@ const Proyectos = () => {
                   src={project}
                   alt={`Project ${index}`}
                 />
-                <span className="bg-orange hover:bg-[#De7700] mx-auto mt-6 py-2 px-4 block w-fit transition-all text-white font-my-raleway font-bold rounded-md">
+                <span className="bg-orange hover:bg-[#De7700] mx-auto mt-6 py-2 px-4 block w-fit transition-all text-white text-sm font-my-raleway font-bold rounded-md">
                   Ver Proyecto
                 </span>
               </Link>

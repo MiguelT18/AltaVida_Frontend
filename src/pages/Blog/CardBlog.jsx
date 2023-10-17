@@ -15,7 +15,7 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
 
   const handleOuterClick = (e) => {
     if (e.target === e.currentTarget) {
-      setModalOpen(false);
+      closeModal();
     }
   };
 

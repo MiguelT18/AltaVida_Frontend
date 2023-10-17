@@ -17,11 +17,11 @@ const Contact = () => {
         textClass="text-white text-md"
       />
 
-      <div className="flex flex-wrap justify-center items-center gap-10 pt-5 px-4">
-        <div className="w-full max-w-[350px] flex flex-col gap-2 text-center">
+      <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10 pt-5 px-4">
+        <div className="w-fit mx-auto flex flex-col justify-center items-center gap-2 text-center">
           <span className="text-sm">¿Tienes dudas? Llámanos</span>
           <a
-            className="bg-orange hover:bg-[#De7700] flex items-center justify-center gap-2 py-2 px-3 rounded-full font-my-raleway text-sm font-bold"
+            className="bg-orange hover:bg-[#De7700] w-full md:w-[340px] flex items-center justify-center gap-2 py-2 px-4 rounded-full text-sm"
             href={`tel:${phoneNumber}`}
           >
             <FaPhoneAlt />
@@ -29,21 +29,23 @@ const Contact = () => {
           </a>
         </div>
 
-        <div className="w-full max-w-[350px] flex flex-col gap-2 text-center">
+        <div className="w-fit mx-auto flex flex-col justify-center items-center gap-2 text-center">
           <span className="text-sm">Excríbenos</span>
           <a
-            className="bg-orange hover:bg-[#De7700] flex items-center justify-center gap-2 py-2 px-3 rounded-full font-my-raleway text-sm font-bold"
+            className="bg-orange hover:bg-[#De7700] w-full md:w-[340px] flex items-center justify-center gap-2 py-2 px-4 rounded-full text-sm"
             href="https://wa.link/ovut67"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <MdWhatsapp size={"1.5em"} />
             Contacto de soporte
           </a>
         </div>
 
-        <div className="w-full max-w-[350px] flex flex-col gap-2 text-center">
+        <div className="w-fit mx-auto flex flex-col justify-center items-center gap-2 text-center">
           <span className="text-sm">¿Deseas información general?</span>
           <a
-            className="bg-orange hover:bg-[#De7700] flex items-center justify-center gap-2 py-2 px-3 rounded-full font-my-raleway text-sm font-bold"
+            className="bg-orange hover:bg-[#De7700] w-full md:w-[340px] flex items-center justify-center gap-2 py-2 px-4 rounded-full text-sm"
             href={`mailto:${email}`}
           >
             <FaEnvelope />

@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white w-full py-5 fixed flex items-center justify-around backdrop-blur-md bg-black bg-opacity-50 border-b-2 border-white shadow-2xl z-50">
+    <nav className="text-white w-full py-5 fixed flex items-center justify-around backdrop-blur-md bg-black bg-opacity-50 border-b-2 border-white shadow-2xl z-40">
       <Link to={"/"}>
         <img
           className="w-full max-w-[150px] h-full cursor-pointer"
@@ -45,13 +45,13 @@ const Navbar = () => {
       <div>
         <IoMenu
           onClick={toggleMenu}
-          className="cursor-pointer relative z-300"
+          className="cursor-pointer relative"
           size={"3em"}
         />
         {menuOpen && (
           <ul
             onClick={handleOuterClick}
-            className="animate__animated animate__bounceIn absolute fond-bold text-md text-center bg-black border-2 border-dark-gray grid gap-6 place-content-center backdrop-blur-sm bg-opacity-90 w-full h-screen right-0 top-0 "
+            className="animate__animated animate__bounceIn absolute fond-bold text-md text-center bg-black border-2 border-dark-gray grid gap-6 place-content-center backdrop-blur-sm bg-opacity-90 w-full h-screen right-0 top-0"
           >
             <AiOutlineFullscreenExit
               onClick={closeMenu}
@@ -61,7 +61,7 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
-                  className="w-full h-full font-my-raleway text-lg px-4 border-l-2 border-orange"
+                  className="w-full h-full font-my-raleway text-lg px-4 py-2 border-l-2 border-orange"
                   to={item.path}
                 >
                   {item.text}

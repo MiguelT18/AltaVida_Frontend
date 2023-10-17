@@ -1,11 +1,39 @@
 import BlurModule from "@src/components/BlurModule";
 import { Link } from "react-router-dom";
 
+import { useEffect, useState } from "react";
 import { IoArrowForward } from "react-icons/io5";
 
+import BgHeroImage01 from "../../assets/images/home/01_HeroHome.jpg";
+import BgHeroImage02 from "../../assets/images/home/MiradorCopa.jpg";
+import BgHeroImage03 from "../../assets/images/home/vino.jpg";
+
 const Hero = () => {
+  const images = [BgHeroImage01, BgHeroImage02, BgHeroImage03];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [images.length]);
+
+  const imageStyle = {
+    backgroundImage: `url(${images[currentImage]})`,
+    transition: "background 1s",
+  };
+
   return (
-    <section className="w-full h-screen grid place-content-center bg-[url('@assets/images/home/MiradorCopa.webp')] bg-cover bg-no-repeat bg-center bg-fixed relative px-6">
+    <section className="bg-black w-full h-screen grid place-content-center relative px-6">
+      <div
+        style={imageStyle}
+        className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+      ></div>
       <BlurModule>
         <div className="max-w-[900px] flex flex-col items-end gap-1">
           <h2 className="text-md font-bold">

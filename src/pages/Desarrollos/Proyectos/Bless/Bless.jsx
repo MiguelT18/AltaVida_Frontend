@@ -7,6 +7,7 @@ import { IoChevronBackOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 import "animate.css";
+import MainSection from "./MainSection";
 
 const AltaMira = () => {
   return (
@@ -28,18 +29,8 @@ const AltaMira = () => {
       </header>
 
       <main>
-        <section className="bg-white w-[90%] md:w-[70%] mx-auto -mt-14 mb-16 py-10 px-6 shadow-lg shadow-gray-500">
-          <h1>Hello Horld!</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-            vero recusandae! Excepturi nam sed, laborum modi, neque ipsum animi
-            nobis ipsa facere consectetur similique rem suscipit. Sapiente earum
-            blanditiis reprehenderit?
-          </p>
-        </section>
-        <section>
-          <Contact />
-        </section>
+        <MainSection />
+        <Contact />
       </main>
       <Footer />
     </>

@@ -68,7 +68,7 @@ const Historia = () => {
             <AiOutlineHistory size={"2rem"} />
           </SolidModule>
           <p className="flex items-center gap-3">
-            <span className="font-bold text-xl text-orange">9</span>
+            <span className="font-bold text-lg text-orange">9</span>
             <span className="text-md">
               <strong>Años</strong> de historia
             </span>
@@ -80,7 +80,7 @@ const Historia = () => {
             <BsFillHouseHeartFill size={"2rem"} />
           </SolidModule>
           <p className="flex items-center gap-3">
-            <span className="font-bold text-xl text-orange">+350</span>
+            <span className="font-bold text-lg text-orange">+350</span>
             <span className="text-md">
               <strong>Casas</strong> en todo Tarija
             </span>
@@ -92,7 +92,7 @@ const Historia = () => {
             <FaUsers size={"2rem"} />
           </SolidModule>
           <p className="flex items-center gap-3">
-            <span className="font-bold text-xl text-orange">
+            <span className="font-bold text-lg text-orange">
               {Math.round(counter)}
             </span>
             <span className="text-md">
