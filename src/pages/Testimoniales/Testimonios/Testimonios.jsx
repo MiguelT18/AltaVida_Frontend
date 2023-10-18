@@ -53,7 +53,7 @@ const Testimonios = () => {
         <Swiper
           autoplay={{
             delay: 2500,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
           }}
           effect={"coverflow"}
           grabCursor={true}
