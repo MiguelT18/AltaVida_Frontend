@@ -13,7 +13,7 @@ const Historia = () => {
   const windowWidth = UseWindowWidth();
 
   const [counter, setCounter] = useState(0);
-  const targetNumber = 2000;
+  const targetNumber = 350;
   const counterRef = useRef(null);
 
   useEffect(() => {
@@ -75,12 +75,14 @@ const Historia = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4 mr-10">
+        <div className="flex items-center gap-4">
           <SolidModule>
             <BsFillHouseHeartFill size={"2rem"} />
           </SolidModule>
           <p className="flex items-center gap-3">
-            <span className="font-bold text-lg text-orange">+350</span>
+            <span className="font-bold text-lg text-orange">
+              +{Math.round(counter)}
+            </span>
             <span className="text-md">
               <strong>Casas</strong> en todo Tarija
             </span>
@@ -92,9 +94,7 @@ const Historia = () => {
             <FaUsers size={"2rem"} />
           </SolidModule>
           <p className="flex items-center gap-3">
-            <span className="font-bold text-lg text-orange">
-              {Math.round(counter)}
-            </span>
+            <span className="font-bold text-lg text-orange">2000</span>
             <span className="text-md">
               <strong>Familias</strong> felices
             </span>

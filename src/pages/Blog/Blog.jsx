@@ -38,6 +38,15 @@ const Blog = () => {
       <main>
         <div className="w-[90%] md:w-[70%] px-5 bg-white shadow-xl shadow-gray-500 mx-auto -mt-14 mb-14 py-14 grid grid-cols-2 max-lg:grid-cols-1 justify-items-center items-stretch gap-12">
           <CardBlog
+            title="5 Razones por las que Tarija, Bolivia, es un Lugar Ideal
+        para Vivir"
+            description="Tarija es una ciudad que combina la belleza
+        natural con una rica cultura y un estilo de vida relajado."
+            views="6060"
+            image={Tarija01}
+            blogContent={<Blog3 />}
+          />
+          <CardBlog
             title="Compras navideñas: Utilidad VS. Novedad"
             description="¿Llegó la hora de hacer todas esas compras navideñas y no sabes ni por dónde empezar? Te ayudamos a distinguir entre Utilidad y Novedad."
             views="108"
@@ -50,15 +59,6 @@ const Blog = () => {
             views="3240"
             image={Ahorra}
             blogContent={<Blog2 />}
-          />
-          <CardBlog
-            title="5 Razones por las que Tarija, Bolivia, es un Lugar Ideal
-        para Vivir"
-            description="Tarija es una ciudad que combina la belleza
-        natural con una rica cultura y un estilo de vida relajado."
-            views="6060"
-            image={Tarija01}
-            blogContent={<Blog3 />}
           />
           <CardBlog
             title="¿Llegó el momento de comprar tu casa?"

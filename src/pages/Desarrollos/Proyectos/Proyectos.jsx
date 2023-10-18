@@ -25,7 +25,7 @@ const Proyectos = () => {
   };
 
   return (
-    <section className="bg-white w-[90%] md:w-[70%] mx-auto -mt-14 mb-16 pt-5 shadow-lg shadow-gray-500">
+    <section className="bg-white w-[90%] md:w-[80%] mx-auto -mt-14 mb-16 pt-5 shadow-lg shadow-gray-500">
       <div>
         <p className="text-sm text-center px-5">
           Descubre la excelencia de AltaVida en proyectos que abarcan desde lujo

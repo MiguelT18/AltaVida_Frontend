@@ -7,11 +7,9 @@ export default {
         orange: "#FF8900",
         "steel-blue": "#4E5B6D",
         silver: "#BDC3C7",
-        emerald: "#2ECC71",
         black: "#000000",
         "dark-gray": "#333333",
         "sky-blue": "#3498DB",
-        yellow: "#F1C40F",
         "navy-blue": "#1B2532",
       },
       fontFamily: {
@@ -26,6 +24,7 @@ export default {
       },
       animation: {
         "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "bounce-slow": "bounce 3s infinite 1s",
       },
     },
   },

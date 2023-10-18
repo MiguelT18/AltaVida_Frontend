@@ -4,14 +4,16 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoArrowForward } from "react-icons/io5";
 
+import BgHeroImage04 from "../../assets/images/desarrollos/bless/4.webp";
 import BgHeroImage01 from "../../assets/images/home/01_HeroHome.jpg";
 import BgHeroImage02 from "../../assets/images/home/MiradorCopa.jpg";
 import BgHeroImage03 from "../../assets/images/home/vino.jpg";
 
 const Hero = () => {
-  const images = [BgHeroImage01, BgHeroImage02, BgHeroImage03];
+  const images = [BgHeroImage01, BgHeroImage02, BgHeroImage03, BgHeroImage04];
 
   const [currentImage, setCurrentImage] = useState(0);
+  const [allImagesLoaded, setAllImagesLoaded] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,6 +25,10 @@ const Hero = () => {
     };
   }, [images.length]);
 
+  const handleAllImagesLoaded = () => {
+    setAllImagesLoaded(true);
+  };
+
   const imageStyle = {
     backgroundImage: `url(${images[currentImage]})`,
     transition: "background 1s",
@@ -30,10 +36,14 @@ const Hero = () => {
 
   return (
     <section className="bg-black w-full h-screen grid place-content-center relative px-6">
-      <div
-        style={imageStyle}
-        className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-      ></div>
+      {allImagesLoaded ? (
+        <div
+          style={imageStyle}
+          className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+        ></div>
+      ) : (
+        <div className="absolute inset-0 bg-black"></div>
+      )}
       <BlurModule>
         <div className="max-w-[900px] flex flex-col items-end gap-1">
           <h2 className="text-md font-bold">
@@ -51,6 +61,15 @@ const Hero = () => {
           </Link>
         </div>
       </BlurModule>
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Image ${index}`}
+          style={{ display: "none" }}
+          onLoad={index === images.length - 1 ? handleAllImagesLoaded : null}
+        />
+      ))}
     </section>
   );
 };

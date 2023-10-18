@@ -29,7 +29,7 @@ const Creditos = () => {
   };
 
   return (
-    <section className="bg-white w-[90%] md:w-[70%] mx-auto -mt-14 mb-16 py-10 px-6 shadow-lg shadow-gray-500">
+    <section className="bg-white w-[90%] md:w-[80%] mx-auto -mt-14 mb-16 py-10 px-6 shadow-lg shadow-gray-500">
       <p className="text-sm text-dark-gray mb-8">
         Porque AltaVida piensa en tí, te ofrecemos increíbles facilidades al
         momento de comprar tu casa o departamento, queremos que formes parte de
@@ -56,9 +56,7 @@ const Creditos = () => {
               src={Creditos.src[index]}
               alt="Credit info"
             />
-            <h1 className="text-center text-sm font-bold font-my-raleway pt-4">
-              {name}
-            </h1>
+            <h1 className="text-center text-sm font-my-raleway pt-4">{name}</h1>
           </div>
         ))}
       </div>

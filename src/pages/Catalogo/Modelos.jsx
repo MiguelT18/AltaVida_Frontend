@@ -12,7 +12,7 @@ import ModeloBrick from "../../assets/images/modelos/9. BRICK.webp";
 const Modelos = () => {
   const Modelos = {
     names: [
-      "Modelo Clasico",
+      "Modelo Clásico",
       "Modelo Canela",
       "Modelo Country",
       "Modelo Petra",
@@ -38,15 +38,18 @@ const Modelos = () => {
   };
 
   return (
-    <section className="bg-white w-[90%] lg:w-[70%] mx-auto -mt-14 mb-16 pb-10 pt-14 px-6 shadow-lg shadow-gray-500">
+    <section className="bg-white w-[90%] md:w-[80%] mx-auto -mt-14 mb-16 pb-10 pt-14 px-6 shadow-lg shadow-gray-500">
       <h1 className="text-center text-lg font-bold font-my-raleway pb-6 uppercase">
         Modelos de Construcción
       </h1>
 
       <div className="flex flex-wrap justify-center gap-14">
         {Modelos.src.map((modelo, index) => (
-          <div className="w-fit" key={index}>
-            <h1 className="text-md text-center pb-2 text-dark-gray">
+          <div
+            className="w-fit border-orange text-dark-gray backdrop-blur-3xl bg-slate-100 bg-opacity-60 max-w-[300px] min-h-[100px] p-5 rounded-xl shadow-md shadow-gray-200"
+            key={index}
+          >
+            <h1 className="text-sm text-center pb-2 uppercase text-dark-gray">
               {Modelos.names[index]}
             </h1>
             <img

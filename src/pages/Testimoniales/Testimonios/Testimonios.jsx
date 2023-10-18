@@ -1,4 +1,9 @@
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import {
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -38,14 +43,18 @@ const Testimonios = () => {
   }, []);
 
   return (
-    <section className="bg-white gap-6 flex flex-wrap flex-row-reverse justify-around items-center w-[90%] md:w-[70%] mx-auto -mt-14 mb-16 py-10 px-6 shadow-lg shadow-gray-500">
+    <section className="bg-white gap-6 flex flex-wrap flex-row-reverse justify-around items-center w-[90%] md:w-[80%] mx-auto -mt-14 mb-16 py-10 px-6 shadow-lg shadow-gray-500">
       <TestimoniosHeader />
 
-      <article>
+      <article className="w-full">
         <h1 className="text-center text-md font-bold font-my-raleway pt-6 pb-8 uppercase">
           Descubre la Alegría de Nuestros Clientes en Alta Vida
         </h1>
         <Swiper
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
@@ -59,12 +68,12 @@ const Testimonios = () => {
           }}
           pagination={true}
           navigation={navigationEnabled}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         >
           {VideoSliders.src.map((video, index) => (
             <SwiperSlide key={index}>
               <video
-                className="md:max-w-[60%] lg:max-w-[30%] mx-auto mb-16 cursor-pointer"
+                className="md:max-w-[70%] xl:max-w-[25%] mx-auto mb-16 cursor-pointer"
                 src={video}
                 controls
               ></video>

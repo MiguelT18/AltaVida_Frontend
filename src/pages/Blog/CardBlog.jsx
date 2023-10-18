@@ -38,7 +38,7 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
       <div>
         <img className="w-full rounded-t-2xl" src={image} alt="Blog post" />
         <div className="p-5 flex flex-col items-end justify-between gap-2">
-          <h1 className="text-lg font-my-raleway font-bold">{title}</h1>
+          <h1 className="text-md font-my-raleway font-bold">{title}</h1>
           <p className="text-sm">{description}</p>
           <div className="text-sm flex items-center w-full justify-between gap-2 pt-5">
             <button
@@ -60,20 +60,27 @@ const CardBlog = ({ image, title, description, views, blogContent }) => {
           onClick={handleOuterClick}
           className="w-full h-full backdrop-blur-md bg-opacity-50 bg-black fixed inset-0 flex items-center justify-center z-50"
         >
-          <div className="bg-white max-w-[90%] sm:max-w-[70%] max-h-[80%] overflow-y-auto py-6 px-1  rounded-2xl shadow-md">
+          <div className="bg-white max-w-[90%] sm:max-w-[70%] max-h-[80%] overflow-y-auto py-6 px-1 rounded-2xl shadow-md relative">
             <div className="max-md:max-w-[90%] max-w-[80%] mx-auto">
               {blogContent}
             </div>
-            <div className="fixed top-0 right-3 lg:right-12 lg:top-2">
+
+            <div className="fixed top-4 right-6">
               <button
-                className=" text-white font-my-raleway font-bold py-1 rounded-full mt-4"
+                className=" text-white font-my-raleway font-bold py-1 rounded-full mt-4 animate-bounce-slow"
                 onClick={closeModal}
               >
                 <AiFillCloseCircle
-                  className="animate__animated animate__heartBeat text-orange transition-all bg-dark-gray rounded-full"
+                  className="animate__animated animate__heartBeat text-orange bg-dark-gray transition-all rounded-full"
                   size={"3em"}
                 />
               </button>
+              <div
+                className="absolute block w-full h-2 -z-50 rounded-full -mt-7"
+                style={{
+                  boxShadow: "0 20px 15px rgba(0, 0, 0, .5)",
+                }}
+              ></div>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const Financiamiento = () => {
     <div>
       <Navbar />
       <ContactButtons />
-      <header className="bg-[url(@assets/images/financiamiento/HeaderBackground.webp)] bg-cover bg-no-repeat bg-center bg-fixed text-white flex flex-col items-center justify-end w-full h-[45vh] pb-24">
+      <header className="bg-[url(@assets/images/financiamiento/HeaderBackground.webp)] bg-cover bg-no-repeat bg-center bg-fixed text-white flex flex-col items-center justify-end w-full h-[50vh] pb-24">
         <h1 className="animate__animated animate__bounceIn text-xl text-center font-my-raleway font-bold uppercase">
           Financiamiento
         </h1>
