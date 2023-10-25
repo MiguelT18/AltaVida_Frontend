@@ -1,4 +1,3 @@
-// import BlurModule from "@src/components/BlurModule";
 import HeaderTitle from "@src/components/HeaderTitle";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { MdWhatsapp } from "react-icons/md";

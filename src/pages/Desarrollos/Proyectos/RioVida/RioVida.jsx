@@ -1,4 +1,3 @@
-import ContactButtons from "@src/components/ContactButtons";
 import Footer from "@src/components/Footer";
 import Navbar from "@src/components/Navbar";
 import Contact from "@src/layouts/Contact";
@@ -10,7 +9,6 @@ import MainSection from "./MainSection";
 const AltaMira = () => {
   return (
     <>
-      <ContactButtons />
       <Navbar />
       <header className="bg-navy-blue bg-cover bg-no-repeat bg-center bg-fixed text-white flex flex-col items-center justify-end w-full h-[45vh] pb-24">
         <Link

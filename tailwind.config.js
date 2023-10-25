@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      width: {
+        navBrandLogo: "clamp(6rem, 35vw, 8rem)",
+      },
       colors: {
         orange: "#FF8900",
         "steel-blue": "#4E5B6D",
