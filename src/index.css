@@ -6,7 +6,7 @@ body {
   background-color: #ededed;
 }
 
-body * {
+* {
   font-family: "Montserrat", sans-serif;
 }
 

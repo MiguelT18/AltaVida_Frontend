@@ -1,8 +1,8 @@
-import BrandLogo from "@assets/logos/brandLogo.webp";
 import "animate.css";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
+import BrandLogo from "../assets/images/logos/brand/brandLogo.webp";
 
 const Footer = () => {
   return (
